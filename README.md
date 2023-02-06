@@ -1,4 +1,4 @@
-`#challenge` `#48h` `#tech-interview` `#master-in-software-development`
+`#challenge` `#3d` `#tech-interview` `#master-in-software-development`
 
 # AIT Student Full Stack Challenge <!-- omit in toc -->
 
@@ -10,7 +10,7 @@
 
 ## ⏳ Time for development
 
-You will have **48 hours** from the delivery of the challenge to solve it.
+You will have **3 days** from the delivery of the challenge to solve it.
 
 ## 🎯 Objective
 
