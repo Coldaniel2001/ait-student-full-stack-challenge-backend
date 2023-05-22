@@ -1,10 +1,10 @@
+const { auth } = require('express-oauth2-jwt-bearer');
+const config = require('../config/config')
 
-// const { auth } = require('express-oauth2-jwt-bearer');
+const jwtCheck = auth({
+    audience:config.auth0.audience,
+    issuerBaseURL: config.auth0.issuer,
+    tokenSigningAlg: 'RS256'
+  });
 
-// const jwtCheck = auth({
-//     audience: "MvenrVUNImyZXZV83EPbI4AtsILyOpvq",
-//     issuerBaseURL: 'https://dev-yeqwyacrnvebw8ga.us.auth0.com/',
-//     tokenSigningAlg: 'RS256'
-// })
-
-// module.exports = {jwtCheck}
+module.exports = {jwtCheck}
