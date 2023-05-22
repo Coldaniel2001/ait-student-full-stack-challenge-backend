@@ -56,6 +56,7 @@ This section details **all the functionalities** of this challenge as a **full s
 - Use of **third-party API's**
 - Use of **third-party libraries**
 - The development of **additional features** to add more value to the **project** will be **valued positively**.
+- Use an external service to deploy the **project**.
 
 ## 🧪 Dependencies
 
