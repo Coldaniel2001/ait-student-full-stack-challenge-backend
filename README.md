@@ -69,7 +69,6 @@ Keep in mind that the **final result** is **mainly valued**, so we **recommend**
 
 ## 🔚 Delivery
 
-The **challenge** must be sent to **education@assemblerschool.com** and must contain the following content:
+The **challenge** must be sent trough **the classroom link provided** and must contain the following content:
 
 - Project repository
-- Documentation in README.md / PDF format
