@@ -9,7 +9,7 @@ const { getError } = require("../middlewares/error.middleware")
 
 const { jwtCheck } = require("../middlewares/check-middlewares")
 
-router.get("/:userId",  getUser)
+router.get("/:userId", jwtCheck, getError, getUser)
 router.get("/", jwtCheck, getError, getAllUsers)
 router.post("/", jwtCheck, getError, createUser)
 

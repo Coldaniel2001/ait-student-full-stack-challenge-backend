@@ -1,7 +1,6 @@
 const UserModel = require('../models/usersModels')
 
 const getAllUsers = async (req, res) => {
-    console.log("ho")
     try {
         const allUsers = await UserModel.find({})
         res.status(200).send({ status: 'OK', allUsers })
