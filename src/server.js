@@ -7,6 +7,7 @@ const cors = require('cors')
 
 const usersRouters = require('./routes/users.routes')
 const gilfsRouters = require('./routes/gilfs.routes')
+const searchRouters = require('./routes/search.routes')
 
 const app = express()
 
@@ -23,6 +24,7 @@ app.use(express.json())
 
 app.use("/users", usersRouters)
 app.use("/gilfs", gilfsRouters)
+app.use("/search", searchRouters)
 
 
 

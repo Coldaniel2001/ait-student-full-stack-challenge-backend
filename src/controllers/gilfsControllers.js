@@ -33,7 +33,10 @@ const deleteGilf = async (req, res) => {
 
         if (gilf.uploadedBy === userId) {
             const gilfDelete = await GilfModel.findByIdAndDelete({ _id: gilf._id })
-            res.status(200).send({ status: 'OK', gilfDelete })
+            return res.status(200).send({ status: 'OK', gilfDelete })
+        }
+        if (gilf.uploadedBy !== userId) {
+            return res.status(200).send({ status: 'Error', msg:'This gif is not from this user' })
         }
 
     } catch (error) {
@@ -59,6 +62,10 @@ const editGilf = async (req, res) => {
                 }
             )
             res.status(200).send({ status: 'OK', gilfEdit })
+        }
+
+        if (gilf.uploadedBy !== userId) {
+            return res.status(200).send({ status: 'Error', msg:'This gif is not from this user' })
         }
 
     } catch (error) {
